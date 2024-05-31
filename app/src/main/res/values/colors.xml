@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="textColour">#bb0c24</color>
     <color name="Yellow">#FEAD1D</color>
+    <color name="Green">#53E88B</color>
+    <color name="CardBackgroundColour">#EfBDBD</color>
+    <color name="Orange">#FF7A00</color>
+    <color name="CardGreen">#53E88B</color>
 </resources>

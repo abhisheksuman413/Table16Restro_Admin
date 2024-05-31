@@ -165,7 +165,7 @@
         android:id="@+id/Tvdesineby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="@font/yeon_sung_regular"
         android:text="Design By \nAbhishek Suman "
         android:textAlignment="center"
@@ -175,8 +175,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVnoaccount"
-        app:layout_constraintVertical_bias="0.988" />
+        app:layout_constraintTop_toBottomOf="@+id/TVnoaccount" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
