@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/EmailET"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
@@ -81,7 +82,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
-        android:id="@+id/NameofOwner"
+        android:id="@+id/NameofOwnerET"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:background="@drawable/edittext_shape"
@@ -98,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <EditText
-        android:id="@+id/NameofRestaurant"
+        android:id="@+id/NameofRestaurantET"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
@@ -111,12 +112,12 @@
         android:hint="Name of Restaurant "
         android:inputType="text"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/NameofOwner"
-        app:layout_constraintStart_toStartOf="@+id/NameofOwner"
-        app:layout_constraintTop_toBottomOf="@+id/NameofOwner" />
+        app:layout_constraintEnd_toEndOf="@+id/NameofOwnerET"
+        app:layout_constraintStart_toStartOf="@+id/NameofOwnerET"
+        app:layout_constraintTop_toBottomOf="@+id/NameofOwnerET" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/emailET"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
@@ -127,14 +128,14 @@
         android:ems="10"
         android:fontFamily="@font/lato_regular"
         android:hint="Email or Phone Number"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/NameofRestaurant"
-        app:layout_constraintStart_toStartOf="@+id/NameofRestaurant"
-        app:layout_constraintTop_toBottomOf="@+id/NameofRestaurant" />
+        app:layout_constraintEnd_toEndOf="@+id/NameofRestaurantET"
+        app:layout_constraintStart_toStartOf="@+id/NameofRestaurantET"
+        app:layout_constraintTop_toBottomOf="@+id/NameofRestaurantET" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordET"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
@@ -147,10 +148,10 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/emailET"
         app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintStart_toStartOf="@+id/emailET"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
 
     <TextView
         android:id="@+id/textView167"
@@ -194,7 +195,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/createButton"
+        android:id="@+id/createButtonBTN"
         android:layout_width="157dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -203,9 +204,9 @@
         android:text="Create Account"
         android:textColor="@color/white"
         android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintEnd_toEndOf="@+id/passwordET"
+        app:layout_constraintStart_toStartOf="@+id/passwordET"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
 
     <TextView
         android:id="@+id/Tvalreadyhaveaccount"
@@ -215,8 +216,8 @@
         android:fontFamily="@font/lato_regular"
         android:text="Already Have An Account?"
         android:textColor="@color/textColour"
-        app:layout_constraintEnd_toEndOf="@+id/createButton"
-        app:layout_constraintStart_toStartOf="@+id/createButton"
-        app:layout_constraintTop_toBottomOf="@+id/createButton" />
+        app:layout_constraintEnd_toEndOf="@+id/createButtonBTN"
+        app:layout_constraintStart_toStartOf="@+id/createButtonBTN"
+        app:layout_constraintTop_toBottomOf="@+id/createButtonBTN" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

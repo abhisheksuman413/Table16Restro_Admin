@@ -92,9 +92,10 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="81dp"
-                android:layout_height="26dp"
-                android:layout_marginEnd="32dp"
+                android:id="@+id/AcceptOrDispatchButton"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/addcartbuttonshape"
                 android:elevation="7dp"
                 android:fontFamily="@font/yeon_sung_regular"

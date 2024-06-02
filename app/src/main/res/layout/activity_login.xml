@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/EmailAddressLoginET"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="25dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/PasswordLoginET"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="17dp"
@@ -76,9 +76,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddressLoginET"
+        app:layout_constraintStart_toStartOf="@+id/EmailAddressLoginET"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddressLoginET" />
 
     <TextView
         android:id="@+id/textView11"
@@ -87,9 +87,9 @@
         android:layout_marginTop="17dp"
         android:fontFamily="@font/yeon_sung_regular"
         android:text="Or"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/PasswordLoginET"
+        app:layout_constraintStart_toStartOf="@+id/PasswordLoginET"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordLoginET" />
 
     <TextView
         android:id="@+id/textView12"
@@ -103,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/LoginButtonFacebookBTN"
         android:layout_width="153dp"
         android:layout_height="57dp"
         android:layout_marginTop="17dp"
@@ -113,13 +113,13 @@
         android:paddingLeft="15dp"
         android:text="Facebook"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/LoginButtonGoogleBTN"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/LoginButtonGoogleBTN"
         android:layout_width="153dp"
         android:layout_height="57dp"
         android:layout_marginTop="17dp"
@@ -131,11 +131,11 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/LoginButtonFacebookBTN"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/LoginButton"
+        android:id="@+id/LoginButtonBTN"
         android:layout_width="153dp"
         android:layout_height="57dp"
         android:layout_marginTop="17dp"
@@ -147,7 +147,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginButtonFacebookBTN" />
 
     <TextView
         android:id="@+id/TVnoaccount"
@@ -157,9 +157,9 @@
         android:fontFamily="@font/lato_regular"
         android:text="Don’t Have Account?"
         android:textColor="@color/textColour"
-        app:layout_constraintEnd_toEndOf="@+id/LoginButton"
-        app:layout_constraintStart_toStartOf="@+id/LoginButton"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+        app:layout_constraintEnd_toEndOf="@+id/LoginButtonBTN"
+        app:layout_constraintStart_toStartOf="@+id/LoginButtonBTN"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButtonBTN" />
 
     <TextView
         android:id="@+id/Tvdesineby"
