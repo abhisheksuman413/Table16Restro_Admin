@@ -51,7 +51,7 @@
 
 
             <EditText
-                android:id="@+id/EnterFoodName"
+                android:id="@+id/EnterItemNameET"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"
@@ -71,7 +71,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <EditText
-                android:id="@+id/EnterFoodPrice"
+                android:id="@+id/EnterFoodPriceET"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
@@ -84,9 +84,9 @@
                 android:padding="15dp"
                 android:textColorHint="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/EnterFoodName"
-                app:layout_constraintStart_toStartOf="@+id/EnterFoodName"
-                app:layout_constraintTop_toBottomOf="@+id/EnterFoodName" />
+                app:layout_constraintEnd_toEndOf="@+id/EnterItemNameET"
+                app:layout_constraintStart_toStartOf="@+id/EnterItemNameET"
+                app:layout_constraintTop_toBottomOf="@+id/EnterItemNameET" />
 
 
             <TextView
@@ -103,9 +103,9 @@
                 android:text="Select Item Image"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/EnterFoodPrice"
-                app:layout_constraintStart_toStartOf="@+id/EnterFoodPrice"
-                app:layout_constraintTop_toBottomOf="@+id/EnterFoodPrice" />
+                app:layout_constraintEnd_toEndOf="@+id/EnterFoodPriceET"
+                app:layout_constraintStart_toStartOf="@+id/EnterFoodPriceET"
+                app:layout_constraintTop_toBottomOf="@+id/EnterFoodPriceET" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
@@ -148,7 +148,7 @@
 
 
             <EditText
-                android:id="@+id/EnterTextDsc"
+                android:id="@+id/EnterFoodDecET"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -182,11 +182,11 @@ ut labore et dolore magna aliqua. Ut enim ad "
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EnterTextDsc" />
+                app:layout_constraintTop_toBottomOf="@+id/EnterFoodDecET" />
 
 
             <EditText
-                android:id="@+id/EnterFoodIngredients"
+                android:id="@+id/EnterFoodIngredientsET"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -202,7 +202,7 @@ ut labore et dolore magna aliqua. Ut enim ad "
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/AddItemButton"
+                android:id="@+id/AddItemButtonBTN"
                 android:layout_width="160dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="16dp"
@@ -216,7 +216,7 @@ ut labore et dolore magna aliqua. Ut enim ad "
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EnterFoodIngredients" />
+                app:layout_constraintTop_toBottomOf="@+id/EnterFoodIngredientsET" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

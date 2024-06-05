@@ -1,19 +1,24 @@
 package com.fps69.table16restro_admin.Adapter
 
+import android.content.Context
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.fps69.table16restro_admin.RecipeDummyUserData
-import com.fps69.table16restro_admin.databinding.ActivityAllItemBinding
+import com.fps69.table16restro_admin.ModelClass.AllMenu
 import com.fps69.table16restro_admin.databinding.ItemForAllitemRecyclerviewBinding
-import kotlin.coroutines.coroutineContext
+import com.google.firebase.database.DatabaseReference
 
-class AllItemAdapter(private val productList: List<RecipeDummyUserData>) :
+class AllItemAdapter(
+    private val context: Context,
+    private val mutableProductList: ArrayList<AllMenu>,
+    databaseReference: DatabaseReference
+) :
     RecyclerView.Adapter<AllItemAdapter.AllItemAdapterViewHolder>() {
 
-    private val itemQuantities = IntArray(productList.size) { 1 }
-    private val mutableProductList = productList.toMutableList()
+    private val itemQuantities = IntArray(mutableProductList.size) { 1 }
+//    private val  = menuList.toMutableList()
 
 
     override fun onCreateViewHolder(
@@ -42,11 +47,15 @@ class AllItemAdapter(private val productList: List<RecipeDummyUserData>) :
         fun bind(position: Int) {
             binding.apply {
                 val quantitites = itemQuantities[position]
-                quantity.text=quantitites.toString()
-                AllItemFoodName.text = mutableProductList[position].name.toString()
-                AllItemFoodPrice.text = "$${mutableProductList[position].prepTimeMinutes.toString()}"
+                val menuItem=mutableProductList[position]
+//                val uriString = mutableProductList[position].foodImag.toString()
+//                val uri=Uri.parse(uriString)  >>> When we pass uri to glide it handel both uri and url aslo
+                                            // >>> Here we are convert url into uri(String to URI)
 
-                Glide.with(binding.root).load(mutableProductList[position].image.toString())
+                quantity.text=quantitites.toString()
+                AllItemFoodName.text = menuItem.foodName.toString()
+                AllItemFoodPrice.text = "$${menuItem.foodPrice.toString()}"
+                Glide.with(context).load("${menuItem.foodImag.toString()}")
                     .into(binding.AllItemImage)
 
                 minusbutton.setOnClickListener {
